@@ -1,7 +1,7 @@
 
 # FLOAT BBS Microsite
 
- ![image](https://github.com/user-attachments/assets/37ee1d79-5fef-4ceb-aac3-1e14258e0a82
+ ![image](https://github.com/user-attachments/assets/37ee1d79-5fef-4ceb-aac3-1e14258e0a82)
 
 A cyberpunk-themed, terminal-inspired microsite announcing the upcoming launch of FLOAT BBS - a knowledge management system designed for neurodivergent thinkers.
 
