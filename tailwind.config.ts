@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Cyberpunk specific colors
+				magenta: '#fd0c78',
+				teal: '#16a085',
+				crimson: '#c0392b',
+				green: '#27ae60',
+				purple: '#8e44ad',
+				// Terminal colors
+				terminal: {
+					bg: '#000000',
+					text: '#f0f0f0',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +96,69 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'text-glitch': {
+					'0%': {
+						transform: 'translate(0)',
+						opacity: '1'
+					},
+					'2%': {
+						transform: 'translate(-3px, 2px)',
+						opacity: '0.9'
+					},
+					'4%': {
+						transform: 'translate(3px, -2px)',
+						opacity: '0.9'
+					},
+					'6%': {
+						transform: 'translate(0)',
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translate(0)',
+						opacity: '1'
+					}
+				},
+				'scanline': {
+					'0%': { transform: 'translateY(0)' },
+					'100%': { transform: 'translateY(100%)' }
+				},
+				'pulse-glow': {
+					'0%': { boxShadow: '0 0 5px 0px var(--glow-color)' },
+					'50%': { boxShadow: '0 0 15px 2px var(--glow-color)' },
+					'100%': { boxShadow: '0 0 5px 0px var(--glow-color)' }
+				},
+				'blink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'breathing-border': {
+					'0%, 100%': { borderColor: 'rgba(253, 12, 120, 0.6)' },
+					'50%': { borderColor: 'rgba(253, 12, 120, 1)' },
+				},
+				'rotate-sigil': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'text-glitch': 'text-glitch 10s infinite',
+				'scanline': 'scanline 8s linear infinite',
+				'pulse-glow': 'pulse-glow 2s infinite',
+				'cursor-blink': 'blink 1s infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'breathing-border': 'breathing-border 4s ease-in-out infinite',
+				'rotate-sigil': 'rotate-sigil 10s linear infinite',
+			},
+			fontFamily: {
+				'mono': ['IBM Plex Mono', 'monospace'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
