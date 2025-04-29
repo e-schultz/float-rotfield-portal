@@ -74,35 +74,35 @@ const Index = () => {
       name: "Quick Thought Capture",
       description:
         "Rapidly capture thoughts without interrupting your flow. Ideas are thrown into the Rotfield as unprocessed fragments to be developed later.",
-      variant: "default",
+      variant: "default" as const,
     },
     {
       command: "floatctl --bloom",
       name: "Structured Editing",
       description:
         "Transform rough notes into structured content. Connect ideas, add metadata, and establish relationships between existing shacks.",
-      variant: "garden",
+      variant: "garden" as const,
     },
     {
       command: "floatctl --rot",
       name: "Archiving to Bone Piles",
       description:
         "Archive inactive notes to Bone Piles where they remain searchable but don't clutter active thinking space. Digital decay as a feature.",
-      variant: "bone-pile",
+      variant: "bone-pile" as const,
     },
     {
       command: "floatctl --necro",
       name: "AI-assisted Resurrection",
       description:
         "Use Note Necromancy to bring back relevant ideas from Bone Piles based on current work. AI helps identify patterns and connections.",
-      variant: "teal",
+      variant: "teal" as const,
     },
     {
       command: "floatctl --tend",
       name: "Garden Nurturing",
       description:
         "Cultivate and organize your best ideas into Gardens. Maintain connections while creating presentable knowledge collections.",
-      variant: "boardwalk",
+      variant: "boardwalk" as const,
     },
   ];
 
@@ -114,7 +114,7 @@ const Index = () => {
         "A modal interface inspired by Vim, designed for keyboard-centric workflows with minimal distractions.",
       command: "floatctl --ui",
       output: ["Loading terminal user interface...", "[OK] Ready"],
-      variant: "default",
+      variant: "default" as const,
     },
     {
       title: "Knowledge Graph",
@@ -122,7 +122,7 @@ const Index = () => {
         "Visualize connections between ideas with an interactive graph that adapts to your thinking patterns.",
       command: "floatctl --graph",
       output: ["Generating knowledge graph...", "[OK] 128 nodes rendered"],
-      variant: "boardwalk",
+      variant: "boardwalk" as const,
     },
     {
       title: "Note Necromancy",
@@ -130,7 +130,7 @@ const Index = () => {
         "AI-assisted resurrection of archived ideas when they become relevant to your current context.",
       command: "floatctl --necro",
       output: ["Running semantic search...", "[FOUND] 5 related bone fragments"],
-      variant: "bone-pile",
+      variant: "bone-pile" as const,
     },
     {
       title: "Multi-panel Workspaces",
@@ -138,7 +138,7 @@ const Index = () => {
         "Customizable workspaces with context-aware styling to support different thinking modes.",
       command: "floatctl --workspace",
       output: ["Loading custom workspace...", "[OK] 'Deep Focus' mode activated"],
-      variant: "teal",
+      variant: "teal" as const,
     },
     {
       title: "Git-based Versioning",
@@ -146,7 +146,7 @@ const Index = () => {
         "Seamless cross-device sync using Git, with automatic versioning and offline capabilities.",
       command: "floatctl --sync",
       output: ["Syncing with remote...", "[OK] All changes committed"],
-      variant: "garden",
+      variant: "garden" as const,
     },
     {
       title: "Plugin System",
@@ -154,7 +154,7 @@ const Index = () => {
         "Extend your Rotfield with custom rituals and integrations tailored to your workflow.",
       command: "floatctl --plugin list",
       output: ["Available plugins:", "- obsidian-import", "- zotero-connector", "- gpt-oracle"],
-      variant: "default",
+      variant: "default" as const,
     },
   ];
 
