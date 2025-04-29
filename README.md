@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
 
-## Project info
+# FLOAT BBS Microsite
 
-**URL**: https://lovable.dev/projects/cbd6c549-043d-4433-9869-efe6d5c7ba06
+A cyberpunk-themed, terminal-inspired microsite announcing the upcoming launch of FLOAT BBS - a knowledge management system designed for neurodivergent thinkers.
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+This project serves as a proof of concept for FLOAT BBS, showcasing the "Shacks, Not Cathedrals" philosophy while offering a glimpse into the Rotfield metaphor and ritual-based workflows. The microsite includes:
 
-**Use Lovable**
+- Animated terminal windows displaying FLOAT's core concepts
+- Cyberpunk aesthetic with high contrast and glowing elements
+- Terminal-style typing animations and interactive elements
+- Mobile-responsive layout that works across all devices
+- Sections showcasing the Rotfield concept, ritual workflows, and features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cbd6c549-043d-4433-9869-efe6d5c7ba06) and start prompting.
+## Vision
 
-Changes made via Lovable will be committed automatically to this repo.
+FLOAT BBS aims to create a visually striking, concept-driven knowledge management system built specifically for neurodivergent minds. Unlike traditional PKM systems that prioritize rigid structure, FLOAT embraces digital impermanence and adaptable organization through its Rotfield metaphor:
 
-**Use your preferred IDE**
+- **Shacks**: Adaptable, modular note structures
+- **Boardwalks**: Connections between ideas
+- **Bone Piles**: Archives with latent value
+- **Gardens**: Curated knowledge collections
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This proof of concept demonstrates the visual language and core concepts behind FLOAT BBS, setting the stage for further development.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technology Stack
 
-Follow these steps:
+- **Frontend**: React with TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **UI Components**: shadcn/ui library
+- **Build Tool**: Vite
+
+## Development
+
+This project was created using Lovable, an AI-powered web application editor that helps create and modify web applications through natural language conversation.
+
+### Running Locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone <YOUR_REPOSITORY_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd float-bbs-microsite
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The site is designed for static hosting and can be deployed via:
 
-**Use GitHub Codespaces**
+- GitHub Pages
+- Vercel
+- Netlify
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+For quick deployment, you can use:
 
-## What technologies are used for this project?
+```sh
+# Build for production
+npm run build
 
-This project is built with:
+# Preview the production build locally
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Contributing
 
-## How can I deploy this project?
+This is a proof of concept project. Feel free to fork and experiment, but please note that the core vision and design decisions are still evolving.
 
-Simply open [Lovable](https://lovable.dev/projects/cbd6c549-043d-4433-9869-efe6d5c7ba06) and click on Share -> Publish.
+## Future Development
 
-## Can I connect a custom domain to my Lovable project?
+The actual FLOAT BBS system is planned for development starting Q2 2025, with the following phases:
 
-Yes, you can!
+- Phase 1: Foundation (Q2 2025)
+- Phase 2: Rituals (Q3 2025)
+- Phase 3: Community (Q4 2025)
+- Phase 4: Expansion (Q1 2026)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Made with Lovable
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project was built using [Lovable](https://lovable.dev), an AI editor for creating web applications. Lovable allows for real-time editing and previewing of changes through natural language conversation.
+
+## License
+
+MIT
