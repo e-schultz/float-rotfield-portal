@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import TypewriterEffect from "@/components/TypewriterEffect";
@@ -7,8 +6,8 @@ import FloatLogo from "@/components/FloatLogo";
 import GlowingButton from "@/components/GlowingButton";
 import EmailSignup from "@/components/EmailSignup";
 import Terminal from "@/components/Terminal";
-import { AnimatedTimeline } from "@/components/AnimatedTimeline";
-import { RitualDisplay } from "@/components/RitualDisplay";
+import AnimatedTimeline from "@/components/AnimatedTimeline";
+import RitualDisplay from "@/components/RitualDisplay";
 import { FeatureGrid } from "@/components/FeaturePreview";
 
 const Index = () => {
@@ -530,7 +529,7 @@ const Index = () => {
               creating a unique system tailored to neurodivergent workflows.
             </p>
 
-            <FeatureGrid features={features} />
+            <FeatureGrid features={features as any} />
           </div>
         </section>
 
